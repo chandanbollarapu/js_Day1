@@ -1,0 +1,47 @@
+<html>
+<body>
+  <form name="forms" onsubmit="return myFunction()">
+    
+    Mobile no:<input type="text" id="contact">
+      <input type="submit">
+      <p id="message"></p>
+    </form>
+</body>
+    <script>
+        function myFunction() {
+             var a = document.getElementById("contact").value;
+            
+            
+            
+              if(a.length==" ") {
+            document.getElementById("message").innerHTML ="please enter mobile number";
+            return false;
+        }
+            
+                 if(isNaN(a)) {
+            document.getElementById("message").innerHTML ="please enter numeric value";
+            return false;
+        }
+            
+        if(a.length>10) {
+            document.getElementById("message").innerHTML ="mobile number must be 10 digits";
+            return false;
+        }    
+            
+            if(a.length<10) {
+            document.getElementById("message").innerHTML ="mobile number must be 10 digits";
+            return false;
+        }    
+            
+            
+            if(a[0]!="7" && !="8" && !="9" && !="6"){
+                  document.getElementById("message").innerHTML ="enter valid number";
+            return false;
+            }
+            
+         
+           
+        }
+        
+    </script>
+</html>

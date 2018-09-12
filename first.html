@@ -1,0 +1,64 @@
+<html>
+<body>
+     
+    First Number: <input type="text" id ="num1">
+    Second Number: <input type="text" id = "num2">
+    <input type="button" onclick="add()" value="add">
+    
+     <p id="demo"> </p> 
+    
+    
+   First Number: <input type="text" id ="num3">
+    Second Number: <input type="text" id = "num4">
+    <input type="button" onclick="sub()" value="sub">
+    
+    <p id="hello"> </p>
+    
+    first number:<input type="text" id="num5">
+        second number:<input type="text" id="num6">
+    <input type="button" onclick="mul()" value="mul">
+  
+    <p id="java"> </p>
+    
+     first number:<input type="text" id="num7">
+        second number:<input type="text" id="num8">
+    <input type="button" onclick="div()" value="div">
+  
+    <p id="js"> </p>
+</body>
+    
+    
+    <script>
+    
+        function add() {
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
+            var c = Number(a) + Number(b);
+            document.getElementById("demo").innerHTML = c;
+        }
+     function sub() {
+            var a = document.getElementById("num3").value;
+            var b = document.getElementById("num4").value;
+            var c = Number(a) - Number(b);
+            document.getElementById("hello").innerHTML = c;
+        }
+        function mul(){
+            var a = document.getElementById("num5").value;
+            var b =document.getElementById("num6").value;
+            var c = Number(a) * Number(b);
+            document.getElementById("java").innerHTML = c;
+        }
+    
+        function div(){
+            var a = document.getElementById("num7").value;
+            var b =document.getElementById("num8").value;
+            var c = Number(a) / Number(b);
+            document.getElementById("js").innerHTML = c;
+        }
+    </script>
+    
+    
+    
+
+
+</html>
